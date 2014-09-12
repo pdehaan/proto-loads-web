@@ -1,0 +1,282 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script src="home_files/jquery-2.js"></script>
+    <script src="home_files/spin.js"></script><style type="text/css"></style>
+    <script src="home_files/handlebars.js"></script>
+    <script src="home_files/loads.js"></script>
+    <link href="home_files/loads.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="header">
+      <a href="https://loads.services.mozilla.com/">
+        <img src="home_files/logo.png" id="logo"><h1>Loads cluster</h1>
+      </a>
+
+        <div id="message"></div>
+    </div>
+    <div class="content">
+
+<div id="active">
+
+<h3>Cluster Management</h3>
+
+<div>
+  <a href="https://loads.services.mozilla.com/agents">Agents statuses</a>
+</div>
+<div>
+  <a href="https://loads.services.mozilla.com/health_check">Launch a health check on all agents</a>
+</div>
+
+<h3 id="active-title">Active Runs</h3>
+ <span id="norun">
+  Nothing is running.
+ </span>
+</div>
+
+<div style="clear: both"></div>
+
+<h3>Finished Runs</h3>
+<p class="summary">The 30 last finished runs are displayed.</p>
+
+<table class="stored">
+  <thead>
+    <tr>
+      <th>Test</th>
+      <th>Duration</th>
+      <th>Finished</th>
+    </tr>
+  </thead>
+  <tbody id="stored">
+      <tr id="inactive-02c31db8-bd30-48a1-a2c2-719b363c1235" class="green">
+        <td>
+          <a href="https://loads.services.mozilla.com/run/02c31db8-bd30-48a1-a2c2-719b363c1235"><span class="status green"></span>stress.StressTest.test_storage_session</a>
+         </td>
+        <td>1 h and 54 sec.</td>
+        <td>3 d ago</td>
+      </tr>
+      <tr id="inactive-47950443-618d-4d43-91d6-7e5bbf4f20d5" class="green">
+        <td>
+          <a href="https://loads.services.mozilla.com/run/47950443-618d-4d43-91d6-7e5bbf4f20d5"><span class="status green"></span>stress.StressTest.test_storage_session</a>
+         </td>
+        <td>10 min and 57 sec.</td>
+        <td>3 d ago</td>
+      </tr>
+      <tr id="inactive-966e3d8a-338e-43d2-933e-f20f7e166619" class="green">
+        <td>
+          <a href="https://loads.services.mozilla.com/run/966e3d8a-338e-43d2-933e-f20f7e166619"><span class="status green"></span>stress.StressTest.test_storage_session</a>
+         </td>
+        <td>10 min and 50 sec.</td>
+        <td>3 d ago</td>
+      </tr>
+      <tr id="inactive-c2be349a-4a36-43c1-b534-8a5177146097" class="green">
+        <td>
+          <a href="https://loads.services.mozilla.com/run/c2be349a-4a36-43c1-b534-8a5177146097"><span class="status green"></span>loadtest.TestLoop.test_all</a>
+         </td>
+        <td>1 h 1 min and 10 sec.</td>
+        <td>3 d ago</td>
+      </tr>
+      <tr id="inactive-25c3eb05-8da5-4cfb-8425-a2c66309438d" class="green">
+        <td>
+          <a href="https://loads.services.mozilla.com/run/25c3eb05-8da5-4cfb-8425-a2c66309438d"><span class="status green"></span>stress.StressTest.test_storage_session</a>
+         </td>
+        <td>11 min and 3 sec.</td>
+        <td>3 d ago</td>
+      </tr>
+      <tr id="inactive-60f20fd9-1a1a-4fcd-b1c8-5730075f963a" class="green">
+        <td>
+          <a href="https://loads.services.mozilla.com/run/60f20fd9-1a1a-4fcd-b1c8-5730075f963a"><span class="status green"></span>stress.StressTest.test_storage_session</a>
+         </td>
+        <td>10 min and 45 sec.</td>
+        <td>3 d ago</td>
+      </tr>
+      <tr id="inactive-884ab576-bc0c-4e6c-97b8-8112408d0cef" class="green">
+        <td>
+          <a href="https://loads.services.mozilla.com/run/884ab576-bc0c-4e6c-97b8-8112408d0cef"><span class="status green"></span>loadtest.TestLoop.test_all</a>
+         </td>
+        <td>30 min and 32 sec.</td>
+        <td>3 d ago</td>
+      </tr>
+      <tr id="inactive-08410919-5af0-45d1-8eda-aef2d50960e2" class="green">
+        <td>
+          <a href="https://loads.services.mozilla.com/run/08410919-5af0-45d1-8eda-aef2d50960e2"><span class="status green"></span>loadtest.TestLoop.test_all</a>
+         </td>
+        <td>10 min and 28 sec.</td>
+        <td>3 d ago</td>
+      </tr>
+        <tr id="inactive-5d7b51f1-0624-49d0-8ed6-e7d899ba367f" class="green">
+        <td>
+          <a href="https://loads.services.mozilla.com/run/5d7b51f1-0624-49d0-8ed6-e7d899ba367f"><span class="status green"></span>Health Check</a>
+         </td>
+        <td>19 sec</td>
+        <td>4 d ago</td>
+      </tr>
+
+      <tr id="inactive-e8344a47-7e30-4415-8812-11230be104d6" class="green">
+        <td>
+          <a href="https://loads.services.mozilla.com/run/e8344a47-7e30-4415-8812-11230be104d6"><span class="status green"></span>loadtest.TestLoop.test_all</a>
+         </td>
+        <td>10 min and 33 sec.</td>
+        <td>4 d ago</td>
+      </tr>
+      <tr id="inactive-2892589c-55a4-4b66-ae04-6f3ce02e3aa9" class="green">
+        <td>
+          <a href="https://loads.services.mozilla.com/run/2892589c-55a4-4b66-ae04-6f3ce02e3aa9"><span class="status green"></span>loadtest.TestLoop.test_all</a>
+         </td>
+        <td>10 min and 32 sec.</td>
+        <td>4 d ago</td>
+      </tr>
+        <tr id="inactive-70da0166-ee3a-49f1-aec3-1b836a39e1c5" class="green">
+        <td>
+          <a href="https://loads.services.mozilla.com/run/70da0166-ee3a-49f1-aec3-1b836a39e1c5"><span class="status green"></span>Health Check</a>
+         </td>
+        <td>18 sec</td>
+        <td>5 d ago</td>
+      </tr>
+
+      <tr id="inactive-6ae2a1ff-d91d-40fd-a7ca-3cf902c94344" class="red">
+        <td>
+          <a href="https://loads.services.mozilla.com/run/6ae2a1ff-d91d-40fd-a7ca-3cf902c94344"><span class="status red"></span>stress.StressTest.test_storage_session</a>
+         </td>
+        <td>1 h and 50 sec.</td>
+        <td>9 d ago</td>
+      </tr>
+      <tr id="inactive-95d1ba05-5be0-4e2b-9303-fbbe91c33a8e" class="green">
+        <td>
+          <a href="https://loads.services.mozilla.com/run/95d1ba05-5be0-4e2b-9303-fbbe91c33a8e"><span class="status green"></span>stress.StressTest.test_storage_session</a>
+         </td>
+        <td>30 min and 33 sec.</td>
+        <td>9 d ago</td>
+      </tr>
+        <tr id="inactive-a906d053-263f-44c6-981e-40d82bab1123" class="green">
+        <td>
+          <a href="https://loads.services.mozilla.com/run/a906d053-263f-44c6-981e-40d82bab1123"><span class="status green"></span>Health Check</a>
+         </td>
+        <td>6 sec</td>
+        <td>9 d ago</td>
+      </tr>
+
+        <tr id="inactive-38606848-7112-449d-9c6b-7269af30a97a" class="green">
+        <td>
+          <a href="https://loads.services.mozilla.com/run/38606848-7112-449d-9c6b-7269af30a97a"><span class="status green"></span>Health Check</a>
+         </td>
+        <td>3 sec</td>
+        <td>9 d ago</td>
+      </tr>
+
+        <tr id="inactive-ae03ac6a-86d3-4cd3-abd0-5b28e18a161c" class="green">
+        <td>
+          <a href="https://loads.services.mozilla.com/run/ae03ac6a-86d3-4cd3-abd0-5b28e18a161c"><span class="status green"></span>Health Check</a>
+         </td>
+        <td>2 min and 8 sec.</td>
+        <td>9 d ago</td>
+      </tr>
+
+        <tr id="inactive-cef97919-e757-4120-8a41-fbadbd9593a1" class="green">
+        <td>
+          <a href="https://loads.services.mozilla.com/run/cef97919-e757-4120-8a41-fbadbd9593a1"><span class="status green"></span>Health Check</a>
+         </td>
+        <td>2 min and 27 sec.</td>
+        <td>9 d ago</td>
+      </tr>
+
+      <tr id="inactive-473fb28c-0065-451d-bedb-0ef120d2ba45" class="red">
+        <td>
+          <a href="https://loads.services.mozilla.com/run/473fb28c-0065-451d-bedb-0ef120d2ba45"><span class="status red"></span>stress.StressTest.test_storage_session</a>
+         </td>
+        <td>37 min and 40 sec.</td>
+        <td>9 d ago</td>
+      </tr>
+      <tr id="inactive-c7ec5ffd-6c62-4f0a-818e-f3a4187f4001" class="green">
+        <td>
+          <a href="https://loads.services.mozilla.com/run/c7ec5ffd-6c62-4f0a-818e-f3a4187f4001"><span class="status green"></span>stress.StressTest.test_storage_session</a>
+         </td>
+        <td>40 min and 18 sec.</td>
+        <td>9 d ago</td>
+      </tr>
+        <tr id="inactive-0eea6c8b-1e4c-4066-8665-abeb83cb948f" class="green">
+        <td>
+          <a href="https://loads.services.mozilla.com/run/0eea6c8b-1e4c-4066-8665-abeb83cb948f"><span class="status green"></span>Health Check</a>
+         </td>
+        <td>36 sec</td>
+        <td>9 d ago</td>
+      </tr>
+
+      <tr id="inactive-a611ea3b-9184-4ea2-8363-6f67ef986872" class="green">
+        <td>
+          <a href="https://loads.services.mozilla.com/run/a611ea3b-9184-4ea2-8363-6f67ef986872"><span class="status green"></span>stress.StressTest.test_storage_session</a>
+         </td>
+        <td>31 min and 27 sec.</td>
+        <td>9 d ago</td>
+      </tr>
+      <tr id="inactive-ec71d407-5478-4447-b113-6b93f8d3281c" class="green">
+        <td>
+          <a href="https://loads.services.mozilla.com/run/ec71d407-5478-4447-b113-6b93f8d3281c"><span class="status green"></span>stress.StressTest.test_storage_session</a>
+         </td>
+        <td>34 min and 0 sec.</td>
+        <td>9 d ago</td>
+      </tr>
+      <tr id="inactive-a27b45dd-7b16-4536-bade-9fcba791888d" class="green">
+        <td>
+          <a href="https://loads.services.mozilla.com/run/a27b45dd-7b16-4536-bade-9fcba791888d"><span class="status green"></span>stress.StressTest.test_storage_session</a>
+         </td>
+        <td>30 min and 59 sec.</td>
+        <td>10 d ago</td>
+      </tr>
+      <tr id="inactive-867e014d-53f6-4a69-846c-70c9d9fea306" class="green">
+        <td>
+          <a href="https://loads.services.mozilla.com/run/867e014d-53f6-4a69-846c-70c9d9fea306"><span class="status green"></span>stress.StressTest.test_storage_session</a>
+         </td>
+        <td>30 min and 43 sec.</td>
+        <td>10 d ago</td>
+      </tr>
+      <tr id="inactive-e1409346-41da-4409-8da3-c6e28c2c26e1" class="green">
+        <td>
+          <a href="https://loads.services.mozilla.com/run/e1409346-41da-4409-8da3-c6e28c2c26e1"><span class="status green"></span>stress.StressTest.test_storage_session</a>
+         </td>
+        <td>30 min and 40 sec.</td>
+        <td>11 d ago</td>
+      </tr>
+      <tr id="inactive-d12e69cc-e256-45e8-a275-17495e434a5f" class="green">
+        <td>
+          <a href="https://loads.services.mozilla.com/run/d12e69cc-e256-45e8-a275-17495e434a5f"><span class="status green"></span>stress.StressTest.test_storage_session</a>
+         </td>
+        <td>30 min and 27 sec.</td>
+        <td>11 d ago</td>
+      </tr>
+      <tr id="inactive-8995f95a-35d9-4feb-b44f-1c3b7b2b5788" class="red">
+        <td>
+          <a href="https://loads.services.mozilla.com/run/8995f95a-35d9-4feb-b44f-1c3b7b2b5788"><span class="status red"></span>stress.StressTest.test_storage_session</a>
+         </td>
+        <td>30 min and 36 sec.</td>
+        <td>11 d ago</td>
+      </tr>
+      <tr id="inactive-574a05b6-52b4-4a8f-8eb1-3cbf21078bdc" class="green">
+        <td>
+          <a href="https://loads.services.mozilla.com/run/574a05b6-52b4-4a8f-8eb1-3cbf21078bdc"><span class="status green"></span>stress.StressTest.test_storage_session</a>
+         </td>
+        <td>30 min and 41 sec.</td>
+        <td>11 d ago</td>
+      </tr>
+      <tr id="inactive-97c70973-37e3-4ecc-af07-e6ffa76fbb66" class="green">
+        <td>
+          <a href="https://loads.services.mozilla.com/run/97c70973-37e3-4ecc-af07-e6ffa76fbb66"><span class="status green"></span>stress.StressTest.test_storage_session</a>
+         </td>
+        <td>30 min and 35 sec.</td>
+        <td>11 d ago</td>
+      </tr>
+  </tbody>
+</table>
+
+
+<script>
+  $(document).ready(function() {
+    initStatusSocket("wss://loads.services.mozilla.com:443/status/websocket");
+  });
+</script>
+    </div>
+    <div class="footer">
+    © Copyright 2013, Mozilla Services.
+    </div>
+  
+
+</body></html>

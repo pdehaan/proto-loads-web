@@ -1,0 +1,42 @@
+<div class="row" ng-controller="SignupCtrl">
+    <div class="large-6 large-offset-3 small-10 small-offset-1 columns text-center">
+        <h5>Sign Up Form</h5>
+        <div class="row">
+            <div class="large-12">
+                <alert type="success" class="success" close="dismiss()" ng-show="alert.success">Registration success!</alert>
+            </div>
+        </div>
+        <div class="row">
+            <div class="large-12">
+                <alert type="alert" class="alert" close="dismiss()" ng-show="alert.fail">Cannot register!</alert>
+            </div>
+        </div>
+        <form ng-submit="signup()">
+            <div class="row">
+                <div class="large-12">
+                    <input type="text" id="name" ng-model="user.name" placeholder="Name" required />
+                </div>
+            </div>
+            <div class="row">
+                <div class="large-12">
+                    <input type="email" id="email" ng-model="user.email" placeholder="Email" required />
+                </div>
+            </div>
+            <div class="row">
+                <div class="large-12">
+                    <input type="password" id="password" ng-model="user.password" placeholder="Password" required />
+                </div>
+            </div>
+            <div class="row">
+                <div class="large-12">
+                    <input type="password" id="cpassword" ng-model="user.cpassword" placeholder="Confirm password" required />
+                </div>
+            </div>
+            <div class="row">
+                <div class="large-12">
+                    <button type="submit" class="button" ng-click="signup">Sign Up</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
